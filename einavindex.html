@@ -1,0 +1,59 @@
+<html>
+<head>
+    <script>
+  
+    var schools= [ //תחלת מערך
+        {
+            schoolname:'Ort', //STRING
+            Studentsname:[    //OBJECT מערך של
+                {
+                    firstname:'Matan',
+                    lastname:'Malka'
+                },
+                {
+                    firstname:'Dekel',
+                    lastname:'Malka'    
+                },
+                {
+                    firstname:'Daniel',
+                    lastname:'widerman'    
+                } 
+            ]
+        },
+        {
+            schoolname:'Afeka',
+            Studentsname:[
+                {
+                    firstname:'Shaked',
+                    lastname:'Malka'
+                },
+                {
+                    firstname:'Rachel',
+                    lastname:'Ohana'    
+                },
+                {
+                    firstname:'natan',
+                    lastname:'NATI'    
+                }  
+            ]
+        }
+    ];
+            
+            
+    
+    for(var i=0;i<schools.length;i++){
+        alert(schools[i].schoolname);
+        for(var j=0;j<schools[i].Studentsname.length;j++) { //j for the inside marach
+            alert(schools[i].Studentsname[j].firstname);
+        }
+     }
+    </script>
+    
+</head>
+<body>
+    
+<h1>hellow Queen </h1>
+    
+</body>
+
+</html>
